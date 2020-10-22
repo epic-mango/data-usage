@@ -1,0 +1,16 @@
+<form action="" method="post">
+    <input type="button" value="Pedir" onclick="">
+</form>
+
+<script src="jquery-3.5.1.min.js"></script>
+<script>
+    function getHTML() {
+        $.ajax({
+            url: 'http://192.168.7.254/',
+            success: function(resp) {
+                $("#html-response").html(resp);
+            },
+            method: "GET"
+        })
+    }
+</script>
